@@ -1,0 +1,592 @@
+.bookedin-login,
+.bookedin-button,
+.bookedin-widget,
+.bookedin-selection {
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    max-width: 500px;
+    text-align: center;
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+.bookedin-widget {
+    max-width: 800px;
+}
+
+.bookedin-selection {
+    max-width: 620px;
+}
+
+.bookedin-login .bookedin-logo {
+    margin-bottom: 20px;
+}
+
+.bookedin-selection {
+    margin-top: 40px;
+}
+
+.form-table th {
+    display: none;
+}
+
+.form-table td {
+    width: 100%;
+}
+
+.bookedin-login input.bookedin-username {
+    display: block;
+    border-radius: 10px;
+    height: 70px;
+    margin: 20px 0;
+    width: 100%;
+    font-size: 22px;
+    padding: 0 20px;
+}
+
+.bookedin-login p.submit,
+.bookedin-button p.submit {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.bookedin-login .button-primary,
+.bookedin-button .button-primary,
+.bookedin-widget .button-primary {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #116188;
+    border-radius: 5px;
+    font-family: serif;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 2px;
+    margin-top: 20px;
+    padding: 30px;
+    display: inline-block;
+    position: relative;
+}
+
+.bookedin-login .button-primary.loading:before,
+.bookedin-button .button-primary.loading:before,
+.bookedin-widget .button-primary.loading:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    left: 85px;
+    top: 22px;
+    background-image: url(../images/loading.gif);
+    background-position: center;
+    background-size: contain;
+}
+
+.step-header {
+    font-family: serif;
+    font-size: 28px;
+    font-style: italic;
+    color: #777;
+    display: block;
+    margin: 40px 0;
+    position: relative;
+}
+
+.bookedin-login .step-header.login {
+    margin-bottom: 10px;
+}
+
+.bookedin-login .no-account.step-header {
+    margin-bottom: 20px;
+}
+
+.bookedin-login .no-account span {
+    background-color: #fff;
+    position: relative;
+    padding: 0 25px;
+}
+
+.bookedin-login .no-account:before {
+    background-color: #d2d2d2;
+    content: "\00a0";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+}
+
+.bookedin-login .error-message,
+.bookedin-button .success-message,
+.bookedin-widget .success-message {
+    display: none;
+    opacity: 0;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 0;
+    transition: opacity 0.3s, display 0.3s;
+}
+
+.bookedin-login .error-message .message-text,
+.bookedin-button .success-message .message-text,
+.bookedin-widget .success-message .message-text {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.bookedin-login .error-message {
+    background-color: #FF7676;
+}
+
+.bookedin-login .error-message.visible,
+.bookedin-button .success-message.visible,
+.bookedin-widget .success-message.visible {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s, display 0.3s;
+}
+
+.bookedin-login .error-message .message-text {
+    color: #2a0607;
+}
+
+.bookedin-selection .choices {
+    margin-top: 40px;
+}
+
+.bookedin-selection a.choice {
+    display: inline-block;
+    max-width: 300px;
+    text-align: center;
+    text-decoration: none;
+    color: #777777;
+}
+
+.bookedin-selection a.choice:hover {
+    background-color: #e9e9e9;
+}
+
+.bookedin-selection a.choice .choice-wrapper {
+    padding: 10px;
+}
+
+.bookedin-selection a.choice-widget {
+    border-right: 1px solid #e6e6e6;
+}
+
+.bookedin-selection a.choice .choice-image {
+    margin: 0 auto 30px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.bookedin-selection a.choice .choice-image img {
+    max-width: 150px;
+    max-height: 120px;
+    opacity: 0.7;
+}
+
+.bookedin-selection a.choice .choice-image .icon-button {
+    display: inline-block;
+    width: 132px;
+    padding: 13px 18px 16px 0;
+    font-size: 28px;
+    color: #FFFFFF;
+    border-radius: 7px;
+    text-transform: uppercase;
+    text-align: right;
+    background: #777777 url(../images/bookedin_clock_icon_white.svg) no-repeat left 13px center;
+    opacity: 0.7;
+    background-size: 30px;
+}
+
+.bookedin-selection a.choice .choice-image img.icon-calendar {
+    margin-top: 15px;
+}
+
+.bookedin-selection a.choice .choice-image .icon-button {
+    margin-top: 50px;
+}
+
+.bookedin-button {
+    padding: 20px 20px 60px;
+}
+
+.bookedin-button .button-container {
+    margin: 5px auto 25px;
+}
+
+.bookedin-button .step-header,
+.bookedin-widget .step-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.bookedin-button .display-name,
+.bookedin-widget .display-name {
+    font-size: inherit;
+    margin: 10px 0 0;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.button-container .button-preview {
+    display: table;
+    font-size: 12px;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+    cursor: default;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0 0 4px;
+}
+
+.button-container .button-icon {
+    height: 100%;
+    width: 31px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.button-container .white-icon,
+.button-container .black-icon {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    margin-left: 18px;
+    margin-top: 12px;
+}
+
+.button-container .white-icon {
+    background: url(../images/bookedin_clock_icon_white.svg) 0 1px no-repeat;
+    background-size: contain;
+}
+
+.button-container .black-icon {
+    background: url(../images/bookedin_clock_icon_black.svg) 0 1px no-repeat;
+    background-size: contain;
+}
+
+.button-container .book-now {
+    padding-left: 60px;
+    padding-right: 18px;
+    white-space: nowrap;
+    height: 56px;
+    line-height: 56px;
+    font-size: 20px;
+    display: inline-block;
+    width: auto;
+}
+
+.button-container .button-preview.small .book-now {
+    padding-left: 45px;
+    padding-right: 10px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 15px;
+}
+
+.button-container .button-preview.small .white-icon,
+.button-container .button-preview.small .black-icon {
+    margin-left: 12px;
+    margin-top: 4px;
+    height: 80%;
+    width: 80%;
+}
+
+.bookedin-button .success-message,
+.bookedin-widget .success-message {
+    margin-top: 20px;
+    background-color: #FE5000;
+    color: #FFFFFF;
+}
+
+.bookedin-button .success-message a,
+.bookedin-widget .success-message a {
+    color: #0e85bd;
+}
+
+.invitation_button {
+    position: relative;
+    width: 460px;
+    font-weight: lighter;
+    display: block;
+    margin: 40px auto 0;
+    padding: 20px;
+    color: #545859;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.invitation_button img {
+    position: absolute;
+    width: 30px;
+    top: -90px;
+    left: 45%;
+}
+
+.invitation_button span {
+    font-weight: normal;
+}
+
+.invitation_button a,
+.invitation_button a:visited {
+    color: #545859;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.invitation_button a:hover {
+    text-decoration: underline;
+}
+
+.bookedin-user-info {
+    margin: 10px auto;
+    max-width: 520px;
+    font-size: 12px;
+    height: 20px;
+    text-align: right;
+}
+
+.widget-user-info .bookedin-user-info {
+    max-width: 860px;
+}
+
+.bookedin-user-info form {
+    display: inline;
+}
+
+.bookedin-user-info .bookedin-logout {
+    background-color: initial;
+    border: 0;
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+.bookedin-user-info .button-back {
+    float: left;
+}
+
+.bookedin-widget .button-container-label {
+    margin: 40px 0 5px;
+    display: block;
+}
+
+.bookedin-widget .custom-theme-wrapper {
+    display: inline-block;
+}
+
+.bookedin-widget .bookedin-widget-wrapper {
+    max-width: 730px;
+    min-width: 320px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #fff;
+    text-align: start;
+}
+
+
+/* START SECTION THEMES */
+.bookedin-widget .bookedin-widget-wrapper.black-theme,
+.bookedin-widget .bookedin-widget-wrapper.dark-background {
+    background-color: #424242;
+}
+
+.bookedin-widget .bookedin-widget-wrapper.brown-theme {
+    background-color: #fffcf8;
+}
+/* END SECTION THEMES */
+
+.bookedin-widget .bookedin-widget-wrapper .date {
+    display: inline-block;
+    font-size: 21px;
+    padding-bottom: 7px;
+    margin-right: 12px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* START SECTION THEMES */
+.bookedin-widget .bookedin-widget-wrapper.black-theme .date,
+.bookedin-widget .bookedin-widget-wrapper.dark-background .date{
+    color: #fff;
+}
+/* END SECTION THEMES */
+
+.bookedin-widget .bookedin-widget-wrapper .calendar-icon {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: default;
+    border: 1px solid #ccc;
+    white-space: nowrap;
+    color: #333;
+    background: #fff none;
+}
+
+.bookedin-widget .bookedin-widget-wrapper .date-changer {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto 0 0;
+    float: right;
+}
+
+@media (max-width: 768px) {
+    .bookedin-widget .bookedin-widget-wrapper .date-changer {
+        float: none;
+    }
+}
+
+.bookedin-widget .bookedin-widget-wrapper .date-changer div {
+    text-decoration: underline;
+    position: relative;
+    float: left;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: default;
+    border: 1px solid #ccc;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.4285715;
+    color: #333;
+    background-color: #fff;
+}
+
+.bookedin-widget .bookedin-widget-wrapper .date-changer .prev {
+    border-radius: 4px 0 0 4px;
+}
+
+.bookedin-widget .bookedin-widget-wrapper .date-changer .today {
+    border-left: 0;
+    border-right: 0;
+}
+
+.bookedin-widget .bookedin-widget-wrapper .date-changer .next {
+    border-radius: 0 4px 4px 0;
+}
+
+.bookedin-widget .bookedin-widget-wrapper .category {
+    margin-top: 10px;
+}
+
+.bookedin-widget .bookedin-widget-wrapper .category,
+.bookedin-widget .bookedin-widget-wrapper .category div {
+    margin-bottom: 12px;
+}
+
+.bookedin-widget .bookedin-widget-wrapper .category .category-title {
+    padding: 8px 0 8px 10px;
+    color: #fff;
+    background-color: #3e3e3e;
+}
+
+/* START SECTION THEMES */
+.bookedin-widget .bookedin-widget-wrapper.black-theme .category .category-title {
+    background-color: #2196f3;
+}
+
+.bookedin-widget .bookedin-widget-wrapper.brown-theme .category .category-title {
+    background-color: #795548;
+}
+
+.bookedin-widget .bookedin-widget-wrapper.blue-theme .category .category-title {
+    background-color: #07608a;
+}
+
+.bookedin-widget .bookedin-widget-wrapper.green-theme .category .category-title {
+    background-color: #1ebf3d;
+}
+
+.bookedin-widget .bookedin-widget-wrapper.red-theme .category .category-title {
+    background-color: #d52b2b;
+}
+
+.bookedin-widget .bookedin-widget-wrapper.custom-theme .category .category-title {
+    color: #3e3e3e;
+    background-color: #f1f1f1;
+}
+
+.bookedin-widget .bookedin-widget-wrapper.dark-background .category .category-title {
+    color: #fff;
+    background-color: #616161;
+}
+/* END SECTION THEMES */
+
+.bookedin-widget .bookedin-widget-wrapper .category .service .service-title {
+    margin-top: 8px;
+    padding: 4px 10px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #3e3e3e;
+    background-color: #f1f1f1;
+}
+
+/* START SECTION THEMES */
+.bookedin-widget .bookedin-widget-wrapper.brown-theme .category .service .service-title {
+    background-color: #e8e1dc;
+}
+
+.bookedin-widget .bookedin-widget-wrapper.custom-theme .category .service .service-title {
+    color: #fff;
+    background-color: #000;
+}
+/* END SECTION THEMES */
+
+.bookedin-widget .bookedin-widget-wrapper .category .service .resource {
+    color: #3e3e3e;
+}
+
+.bookedin-widget .bookedin-widget-wrapper .category .service .resource .resource-title {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* START SECTION THEMES */
+.bookedin-widget .bookedin-widget-wrapper.black-theme .category .service .resource,
+.bookedin-widget .bookedin-widget-wrapper.dark-background .category .service .resource {
+    color: #fff;
+}
+/* START SECTION THEMES */
+
+.bookedin-widget .bookedin-widget-wrapper .category .service .resource .dates-table td {
+    text-align: left;
+    padding-right: 20px;
+    float: left;
+}
+
+.bookedin-widget .bookedin-widget-wrapper .category .service .resource .dates-table td > a{
+    font: 12px Verdana, sans-serif;
+    color: #2196f3;
+    cursor: default;
+    text-decoration: underline;
+}
